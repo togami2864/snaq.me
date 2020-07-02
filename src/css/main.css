@@ -202,6 +202,35 @@ img {
   overflow: hidden;
 }
 
+#layout {
+  width: 1665px;
+  overflow-x: hidden;
+}
+
+.btn_register {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2.5rem;
+  width: 440px;
+  height: 60px;
+  padding-top: 10px;
+  border-radius: 25px;
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.7);
+          box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.7);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  will-change: transform;
+}
+
+.btn_register-Light {
+  background: #cb6d4f;
+}
+
 .header {
   height: 90px;
   width: 100%;
@@ -251,6 +280,11 @@ img {
 
 .f-view_container-title {
   position: absolute;
+}
+
+.f-view .btn_register-top {
+  position: absolute;
+  bottom: -50px;
 }
 
 .concept {
@@ -639,5 +673,21 @@ img {
 .slideShow .slide_text {
   font-size: 1.9rem;
   text-align: center;
+}
+
+.slideShow_cation p {
+  font-size: 2.1rem;
+}
+
+.banner {
+  height: 85px;
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 0;
 }
 /*# sourceMappingURL=main.css.map */

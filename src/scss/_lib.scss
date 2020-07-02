@@ -17,3 +17,25 @@ img {
   width: 100%;
   overflow: hidden;
 }
+
+#layout {
+  width: 1665px;
+  overflow-x: hidden;
+}
+
+.btn_register {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  width: 440px;
+  height: 60px;
+  padding-top: 10px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.7);
+  transition: 0.3s ease;
+  will-change: transform;
+  &-Light {
+    background: #cb6d4f;
+  }
+}
