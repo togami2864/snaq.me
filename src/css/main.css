@@ -679,6 +679,86 @@ img {
   font-size: 2.1rem;
 }
 
+.footer {
+  height: 510px;
+  width: 100%;
+  background-color: #162753;
+  color: white;
+}
+
+.footer_container {
+  margin: 0 225px;
+}
+
+.footer_pages {
+  width: 1240px;
+  height: 345px;
+  border-bottom: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.footer_pages-menu {
+  width: 620px;
+  font-size: 2.5rem;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer_pages-policy {
+  width: 620px;
+  height: 250px;
+  font-size: 1.8rem;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer_pages a {
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+}
+
+.footer_icons {
+  margin: 70px 0;
+}
+
+.footer_icons-sns .sns {
+  width: 45px;
+  height: 45px;
+}
+
+.footer_icons-sns .sns img {
+  height: 100%;
+  width: 100%;
+}
+
+.footer .copyright {
+  color: #d0cfcd;
+  font-size: 2rem;
+}
+
 .banner {
   height: 85px;
   background: rgba(0, 0, 0, 0.5);

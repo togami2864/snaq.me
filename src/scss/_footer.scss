@@ -1,0 +1,53 @@
+.footer {
+  height: 510px;
+  width: 100%;
+  background-color: #162753;
+  color: white;
+  &_container {
+    margin: 0 225px;
+  }
+  &_pages {
+    width: 1240px;
+    height: 345px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: left;
+    &-menu {
+      width: 620px;
+      font-size: 2.5rem;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    &-policy {
+      width: 620px;
+      height: 250px;
+      font-size: 1.8rem;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    a {
+      text-decoration: underline white;
+    }
+  }
+  &_icons {
+    margin: 70px 0;
+    &-sns {
+      .sns {
+        width: 45px;
+        height: 45px;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .copyright {
+    color: #d0cfcd;
+    font-size: 2rem;
+  }
+}
