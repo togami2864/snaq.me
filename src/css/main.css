@@ -679,6 +679,147 @@ img {
   font-size: 2.1rem;
 }
 
+.faq {
+  height: 3000px;
+}
+
+.faq_container {
+  width: 960px;
+  margin: 0 380px;
+  padding: 20px;
+}
+
+.faq_title {
+  font-size: 3.3rem;
+  text-align: center;
+}
+
+.faq_accordion-btn {
+  height: 110px;
+  width: 900px;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 15px 40px 10px 80px;
+  background: #faf5e3;
+  color: black;
+  font-size: 2.1rem;
+  font-weight: 600;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.faq_accordion-btn .btn_circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: 40px;
+  display: block;
+  background: #efdfa3;
+}
+
+.faq_accordion-btn::before {
+  width: 30px;
+  height: 3px;
+  content: "";
+  position: absolute;
+  background: white;
+  top: 50%;
+  right: 52px;
+  z-index: 1;
+}
+
+.faq_accordion-btn::after {
+  width: 30px;
+  height: 3px;
+  content: "";
+  position: absolute;
+  background: white;
+  top: 50%;
+  right: 52px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  z-index: 1;
+}
+
+.faq_accordion-btn:focus, .faq_accordion-btn:hover {
+  opacity: 0.5;
+}
+
+.faq_accordion-btn--active::after {
+  content: none;
+}
+
+.faq_accordion-body + dt {
+  margin-top: 20px;
+}
+
+.faq_accordion-body {
+  display: none;
+  padding: 15px;
+}
+
+.faq_accordion-body--active {
+  display: block;
+}
+
+.faq_accordion-text {
+  font-size: 2.1rem;
+  margin-bottom: 20px;
+  padding: 40px 80px;
+}
+
+.faq_email {
+  text-align: center;
+  font-size: 2.1rem;
+}
+
+.faq_email-text {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.faq_email-email {
+  font-weight: 600;
+}
+
+.faq_questions {
+  text-align: center;
+  margin-bottom: 180px;
+}
+
+.faq_btn-list {
+  display: inline-block;
+  width: 640px;
+  height: 92px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  max-width: 100%;
+  padding: 30px 0;
+  background: white;
+  border: 1px solid black;
+  text-align: center;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  position: relative;
+}
+
+.faq_btn-list::before {
+  position: absolute;
+  top: 36%;
+  right: 40px;
+}
+
+.faq_btn-list:focus, .faq_btn-list:hover {
+  opacity: 0.5;
+}
+
 .footer {
   height: 510px;
   width: 100%;
