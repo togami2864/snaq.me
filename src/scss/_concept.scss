@@ -1,0 +1,17 @@
+.concept {
+  height: 575px;
+  &_container {
+    padding: 145px 570px;
+    text-align: center;
+    p {
+      font-size: 31px;
+      font-weight: 600;
+      line-height: 2;
+      letter-spacing: 4px;
+      color: #172852;
+      &:nth-child(5) {
+        line-height: 6;
+      }
+    }
+  }
+}

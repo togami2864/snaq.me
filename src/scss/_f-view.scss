@@ -1,0 +1,10 @@
+.f-view {
+  height: 1000px;
+  background: url(../img/img_keyvisual_1.png) center no-repeat;
+  &_container {
+    margin-left: 90px;
+    &-title {
+      position: absolute;
+    }
+  }
+}
