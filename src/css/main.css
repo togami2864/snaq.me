@@ -679,6 +679,31 @@ img {
   font-size: 2.1rem;
 }
 
+.media {
+  height: 300px;
+  margin: 70px 0 40px 0;
+  text-align: center;
+}
+
+.media_carousels {
+  height: 145px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.media_card img {
+  width: 340px;
+  height: 145px;
+}
+
+.media_text {
+  font-size: 2.1rem;
+  font-weight: 600;
+  display: block;
+  margin: 30px 0;
+}
+
 .faq {
   height: 3000px;
 }
@@ -691,7 +716,9 @@ img {
 
 .faq_title {
   font-size: 3.3rem;
+  font-weight: 600;
   text-align: center;
+  margin-bottom: 70px;
 }
 
 .faq_accordion-btn {

@@ -1,0 +1,21 @@
+.media {
+  height: 300px;
+  margin: 70px 0 40px 0;
+  text-align: center;
+  &_carousels {
+    height: 145px;
+    display: flex;
+  }
+  &_card {
+    img {
+      width: 340px;
+      height: 145px;
+    }
+  }
+  &_text {
+    font-size: 2.1rem;
+    font-weight: 600;
+    display: block;
+    margin: 30px 0;
+  }
+}
