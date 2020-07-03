@@ -1216,6 +1216,11 @@ img {
   display: flex;
 }
 
+.media_card {
+  display: block;
+  margin: 0 30px;
+}
+
 .media_card img {
   width: 340px;
   height: 145px;

@@ -9,10 +9,11 @@
       list-style: none;
       height: 100%;
       display: flex;
-      // animation: scrolling 5s linear infinite;
     }
   }
   &_card {
+    display: block;
+    margin: 0 30px;
     img {
       width: 340px;
       height: 145px;
