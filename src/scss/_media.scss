@@ -5,6 +5,12 @@
   &_carousels {
     height: 145px;
     display: flex;
+    &-content {
+      list-style: none;
+      height: 100%;
+      display: flex;
+      // animation: scrolling 5s linear infinite;
+    }
   }
   &_card {
     img {
@@ -17,5 +23,13 @@
     font-weight: 600;
     display: block;
     margin: 30px 0;
+  }
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200px);
+    }
   }
 }

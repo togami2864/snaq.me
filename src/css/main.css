@@ -1208,6 +1208,14 @@ img {
   display: flex;
 }
 
+.media_carousels-content {
+  list-style: none;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .media_card img {
   width: 340px;
   height: 145px;
@@ -1220,8 +1228,15 @@ img {
   margin: 30px 0;
 }
 
-.faq {
-  height: 3000px;
+@keyframes scrolling {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
 }
 
 .faq_container {
@@ -1250,9 +1265,8 @@ img {
   font-weight: 600;
   border: none;
   text-align: left;
+  outline: none;
   cursor: pointer;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
 }
 
 .faq_accordion-btn .btn_circle {
@@ -1304,12 +1318,18 @@ img {
 }
 
 .faq_accordion-body {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
   padding: 15px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 .faq_accordion-body--active {
-  display: block;
+  height: 290px;
+  visibility: visible;
+  opacity: 1;
 }
 
 .faq_accordion-text {
@@ -1330,10 +1350,12 @@ img {
 
 .faq_email-email {
   font-weight: 600;
+  margin-bottom: 50px;
 }
 
 .faq_questions {
   text-align: center;
+  margin-top: 50px;
   margin-bottom: 180px;
 }
 
