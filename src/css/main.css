@@ -282,13 +282,67 @@ img {
   margin-left: 90px;
 }
 
-.f-view_container-title {
+.f-view_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.f-view_content-title {
+  font-size: 4rem;
+  letter-spacing: 14.5px;
+  font-weight: 600;
+  width: 445px;
+  height: 80px;
   position: absolute;
+  top: 160px;
+  z-index: 2;
+}
+
+.f-view_content-title::after {
+  display: block;
+  content: "";
+  width: 400px;
+  height: 70px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: -2px;
+  z-index: -1;
+}
+
+.f-view_content-img {
+  width: 300px;
+  height: 75px;
+  margin-top: 30px;
+  position: absolute;
+  top: 220px;
+}
+
+.f-view_content-img img {
+  height: 100%;
+}
+
+.f-view_content-img::after {
+  display: block;
+  content: "";
+  width: 300px;
+  height: 70px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: -2px;
+  z-index: 0;
 }
 
 .f-view .btn_register-top {
   position: absolute;
-  bottom: -50px;
+  bottom: -300px;
 }
 
 .concept {
