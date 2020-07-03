@@ -1,10 +1,16 @@
 const media = () => {
-  const mediaContent = document.querySelector("ul.media_carousels-content");
-  for (let i = 0; i < 10; i++) {
-    mediaContent.appendChild(mediaContent.children[i].cloneNode(true));
-  }
+  const mediaCarousels = document.querySelector(".media_carousels");
+
+  new Glide(".media_glide", {
+    autoplay: 2500,
+    type: "carousel",
+    perView: 3,
+  }).mount();
+
+  mediaCarousels.addEventListener("hover", () => {
+    Glide.disable();
+  });
 };
 media();
-//setInterval(media(),300)
 
-// export default media;
+export default media;

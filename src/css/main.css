@@ -1202,26 +1202,6 @@ img {
   text-align: center;
 }
 
-.media_carousels {
-  height: 145px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.media_carousels-content {
-  list-style: none;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.media_card {
-  display: block;
-  margin: 0 30px;
-}
-
 .media_card img {
   width: 340px;
   height: 145px;

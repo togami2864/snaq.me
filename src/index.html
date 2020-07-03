@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
       integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI="
       crossorigin="anonymous"
@@ -525,39 +533,41 @@
       </div>
       <!-- /.review -->
       <div class="media">
-        <div class="media_carousels">
-          <ul class="media_carousels-content">
-            <li class="media_card">
-              <img src="./img/img_media1.png" alt="ズームイン" />
-            </li>
-            <li class="media_card">
-              <img src="./img/img_media2.png" alt="ノンストップ" />
-            </li>
-            <li class="media_card">
-              <img src="./img/img_media3.png" alt="VERY" />
-            </li>
-            <li class="media_card">
-              <img src="./img/img_media4.png" alt="VoCE" />
-            </li>
-            <li class="media_card">
-              <img src="./img/img_media5.png" alt="VOGUE" />
-            </li>
-            <li class="media_card">
-              <img src="./img/img_media6.png" alt="世田谷ライフ" />
-            </li>
-            <li class="media_card">
-              <img src="./img/img_media7.png" alt="OZ" />
-            </li>
-            <li class="media_card">
-              <img src="./img/img_media8.png" alt="BAILA" />
-            </li>
-            <li class="media_card">
-              <img src="./img/img_media9.png" alt="Locari" />
-            </li>
-            <li class="media_card">
-              <img src="./img/img_media10.png" alt="macaroni" />
-            </li>
-          </ul>
+        <div class="media_glide">
+          <div class="media_carousels" data-glide-el="track">
+            <ul class="media_carousels-content glide__slides">
+              <li class="media_card">
+                <img src="./img/img_media1.png" alt="ズームイン" />
+              </li>
+              <li class="media_card">
+                <img src="./img/img_media2.png" alt="ノンストップ" />
+              </li>
+              <li class="media_card">
+                <img src="./img/img_media3.png" alt="VERY" />
+              </li>
+              <li class="media_card">
+                <img src="./img/img_media4.png" alt="VoCE" />
+              </li>
+              <li class="media_card">
+                <img src="./img/img_media5.png" alt="VOGUE" />
+              </li>
+              <li class="media_card">
+                <img src="./img/img_media6.png" alt="世田谷ライフ" />
+              </li>
+              <li class="media_card">
+                <img src="./img/img_media7.png" alt="OZ" />
+              </li>
+              <li class="media_card">
+                <img src="./img/img_media8.png" alt="BAILA" />
+              </li>
+              <li class="media_card">
+                <img src="./img/img_media9.png" alt="Locari" />
+              </li>
+              <li class="media_card">
+                <img src="./img/img_media10.png" alt="macaroni" />
+              </li>
+            </ul>
+          </div>
         </div>
         <p class="media_text">取材依頼は pr@snaq.me までご連絡ください。</p>
       </div>
@@ -699,7 +709,9 @@
       <!-- /.banner -->
     </div>
     <!-- /#layout -->
+    <script src="./node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="./node_modules/@glidejs/glide/dist/glide.modular.esm.js"></script>
+
     <script src="./main.js"></script>
-    <!-- <script src="js/media.js"></script> -->
   </body>
 </html>
