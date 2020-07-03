@@ -239,7 +239,8 @@ img {
   height: 90px;
   width: 100%;
   padding: 32px 50px 30px 30px;
-  background: transparent;
+  background: rgba(255, 255, 255, 0);
+  position: fixed;
 }
 
 .header_container {
@@ -274,8 +275,10 @@ img {
 }
 
 .f-view {
-  height: 1000px;
-  background: url(../img/img_keyvisual_1.png) center no-repeat;
+  height: 1200px;
+  background-image: url(../img/img_keyvisual_1.png);
+  background-position: center 1px;
+  background-repeat: no-repeat;
 }
 
 .f-view_container {
@@ -301,7 +304,6 @@ img {
   height: 80px;
   position: absolute;
   top: 160px;
-  z-index: 2;
 }
 
 .f-view_content-title::after {
@@ -310,15 +312,15 @@ img {
   width: 400px;
   height: 70px;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.7);
   position: absolute;
   top: -2px;
-  z-index: -1;
 }
 
 .f-view_content-img {
   width: 300px;
   height: 75px;
+  display: block;
   margin-top: 30px;
   position: absolute;
   top: 220px;
@@ -334,7 +336,7 @@ img {
   width: 300px;
   height: 70px;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.7);
   position: absolute;
   top: -2px;
   z-index: 0;
@@ -1356,5 +1358,25 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 15px 0;
+}
+
+.header {
+  z-index: 100;
+}
+
+.f-view_content-title {
+  z-index: 10;
+}
+
+.f-view_content-title::after {
+  z-index: -10;
+}
+
+.f-view_content-img {
+  z-index: 10;
+}
+
+.f-view_content-img::after {
+  z-index: -10;
 }
 /*# sourceMappingURL=main.css.map */

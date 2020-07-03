@@ -1,0 +1,18 @@
+.header {
+  z-index: 100;
+}
+
+.f-view_content {
+  &-title {
+    z-index: 10;
+    &::after {
+      z-index: -10;
+    }
+  }
+  &-img {
+    z-index: 10;
+    &::after {
+      z-index: -10;
+    }
+  }
+}
