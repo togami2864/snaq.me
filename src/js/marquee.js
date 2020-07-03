@@ -1,19 +1,14 @@
 const marquee = () => {
-  const slides = document.querySelector(".marquee");
-  const marqueeElementsDisplayed = getComputedStyle(slides).getPropertyValue(
-    "--marquee-elements-displayed"
-  );
+  const marquee = document.querySelector(".marquee");
+
   const marqueeContent = document.querySelector("ul.marquee_slides-content");
 
-  slides.style.setProperty(
-    "--marquee-elements",
-    marqueeContent.children.length
-  );
+  marquee.style.setProperty("--marqueeElements", 20);
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 20; i++) {
     marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
   }
 };
-setInterval(marquee(), 6000);
+marquee();
 
 export default marquee;

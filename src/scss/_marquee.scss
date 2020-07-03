@@ -1,33 +1,37 @@
 .marquee {
-  --marquee-width: 1665px;
-  --marquee-height: 188px;
-  --marquee-elements-displayed: 7;
-  --marquee-element-width: calc(
-    var(--marquee-width) / var(--marquee-elements-displayed)
+  --marqueeWidth: 1508px;
+  --marqueeHeight: 188px;
+  --marqueeElementsDisplayed: 8;
+  --marqueeElementWidth: calc(
+    var(--marqueeWidth) / var(--marqueeElementsDisplayed)
   );
-  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+  --marqueeAnimationDuration: calc(var(--marqueeElements) * 2s);
   &_slides {
-    width: var(--marquee-width);
-    height: var(--marquee-height);
+    width: var(--marqueeWidth);
+    height: var(--marqueeHeight);
     margin-bottom: 90px;
     &-content {
       list-style: none;
       height: 100%;
       display: flex;
-      animation: scrolling var(--marquee-animation-duration) linear infinite;
+      animation: scrolling var(--marqueeAnimationDuration) infinite linear;
     }
   }
-  h2 {
-    text-align: center;
-    font-size: 3.3rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    margin-bottom: 80px;
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(
+        calc(-1 * (var(--marqueeElementWidth) * var(--marqueeElements) + 380px))
+      );
+    }
   }
   .slide {
-    width: var(--marquee-element-width);
+    width: var(--marqueeElementWidth);
     height: 188px;
     margin: 0 10px;
+    white-space: nowrap;
   }
   .slide_img {
     width: 188px;
@@ -36,6 +40,14 @@
   .slide_text {
     font-size: 1.9rem;
     text-align: center;
+  }
+
+  &_title {
+    text-align: center;
+    font-size: 3.3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 80px;
   }
   &_cation {
     padding-top: 90px;
@@ -155,16 +167,6 @@
         visibility: visible;
         opacity: 1;
       }
-    }
-  }
-  @keyframes scrolling {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(
-        calc(-1 * var(--marquee-element-width) * var(--marquee-elements))
-      );
     }
   }
 }
