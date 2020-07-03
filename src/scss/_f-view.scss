@@ -54,6 +54,7 @@
   }
   .btn_register-top {
     position: absolute;
-    bottom: -300px;
+    bottom: -380px;
+    will-change: transform;
   }
 }

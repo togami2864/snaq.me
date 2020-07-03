@@ -168,15 +168,16 @@
       width: 435px;
       height: 170px;
       font-weight: 600;
-      background: rgba(250, 246, 229, 0.4);
+      background: rgba(250, 246, 229, 0.6);
+      transition: all 1000ms;
       &--1 {
         position: absolute;
         top: 40px;
-        right: 30px;
+        right: -665px;
         &::before {
           display: inline-block;
           content: "";
-          background: rgba(250, 246, 229, 1);
+          background: rgba(250, 246, 229, 0.6);
           position: absolute;
           width: 235px;
           height: 175px;
@@ -184,10 +185,13 @@
           top: 0;
           z-index: -1;
         }
+        &.fade-in {
+          right: 30px;
+        }
       }
       &--2 {
         position: absolute;
-        left: 40px;
+        left: -680px;
         padding: 10px;
         &::before {
           display: inline-block;
@@ -200,10 +204,13 @@
           top: 0;
           z-index: -1;
         }
+        &.fade-in {
+          left: 40px;
+        }
       }
       &--3 {
         position: absolute;
-        right: 30px;
+        right: -670px;
         bottom: 10px;
         &::before {
           display: inline-block;
@@ -216,10 +223,14 @@
           top: 29px;
           z-index: -1;
         }
+        &.fade-in {
+          right: 30px;
+        }
       }
       &--4 {
         position: absolute;
         top: 45px;
+        left: -680px;
         &::before {
           display: inline-block;
           content: "";
@@ -231,10 +242,13 @@
           left: 0;
           z-index: -1;
         }
+        &.fade-in {
+          left: 0;
+        }
       }
       &--5 {
         position: absolute;
-        left: 60px;
+        left: -680px;
         bottom: 20px;
         &::before {
           display: inline-block;
@@ -247,11 +261,14 @@
           left: 0;
           z-index: -1;
         }
+        &.fade-in {
+          left: 60px;
+        }
       }
       &--6 {
         position: absolute;
         top: 0;
-        right: 60px;
+        right: -680px;
         &::before {
           display: inline-block;
           content: "";
@@ -263,10 +280,13 @@
           left: 0;
           z-index: -1;
         }
+        &.fade-in {
+          right: 60px;
+        }
       }
       &--7 {
         position: absolute;
-        right: 0;
+        right: -690px;
         top: 45px;
         &::before {
           display: inline-block;
@@ -279,7 +299,13 @@
           top: 0;
           z-index: -1;
         }
+        &.fade-in {
+          right: 0;
+        }
       }
     }
+  }
+  .slide-in {
+    transform: translateX(0);
   }
 }

@@ -1,8 +1,22 @@
-.slideShow {
-  height: 1700px;
+.marquee {
+  // height: 1700px;
+  --marquee-width: 1665px;
+  --marquee-height: 188px;
+  --marquee-elements-displayed: 7;
+  --marquee-element-width: calc(
+    var(--marquee-width) / var(--marquee-elements-displayed)
+  );
+  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
   &_slides {
-    display: flex;
+    width: var(--marquee-width);
+    height: var(--marquee-height);
     margin-bottom: 90px;
+    &-content {
+      list-style: none;
+      height: 100%;
+      display: flex;
+      animation: scrolling var(--marquee-animation-duration) linear infinite;
+    }
   }
   h2 {
     text-align: center;
@@ -12,7 +26,7 @@
     margin-bottom: 80px;
   }
   .slide {
-    width: 188px;
+    width: var(--marquee-element-width);
     height: 188px;
     margin: 0 10px;
   }
@@ -65,12 +79,14 @@
   }
   &_category {
     text-align: center;
+    margin-bottom: 200px;
+    transition: 0.25s;
     &-title {
       margin: 80px 0 20px 0;
     }
     &-btn {
       position: relative;
-      display: block;
+      display: inline-block;
       text-decoration: underline;
       width: 340px;
       font-size: 2.1rem;
@@ -79,7 +95,9 @@
       border: none;
       background: white;
       cursor: pointer;
+      outline: none;
       transition: 0.25s;
+
       &-circle {
         display: block;
         width: 25px;
@@ -112,17 +130,42 @@
         height: 2px;
         background: white;
         z-index: 1;
+
         transform: rotate(90deg);
       }
       &:focus,
       &:hover {
         opacity: 0.5;
       }
+      &--active {
+        display: block;
+        &::after {
+          content: none;
+        }
+      }
     }
     &-body {
-      width: 950px;
-      height: 610px;
+      width: 1000px;
+      height: 0;
       margin: 0 auto;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.25s;
+      &--active {
+        height: 610px;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(
+        calc(-1 * var(--marquee-element-width) * var(--marquee-elements))
+      );
     }
   }
 }
