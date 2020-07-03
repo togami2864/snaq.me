@@ -8,7 +8,7 @@ const media = () => {
   }).mount();
 
   mediaCarousels.addEventListener("hover", () => {
-    Glide.disable();
+    mediaGlide.disable();
   });
 };
 media();

@@ -1157,25 +1157,19 @@ img {
 
 .review_carousels {
   height: 720px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 100px;
+  width: 100%;
 }
 
 .review_carousels-card {
-  width: 450px;
+  display: block;
+  width: 700px !important;
   height: 650px;
   border: 1px solid black;
   padding: 15px;
-  margin: 0 40px;
+  margin: 0 30px !important;
 }
 
 .review_carousels-card img {
-  width: 410px;
   height: 615px;
   border: 1px solid black;
 }
@@ -1194,6 +1188,17 @@ img {
   position: absolute;
   top: 50%;
   left: 90px;
+}
+
+.review_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+}
+
+.review .glide__arrow.glide__arrow--left, .review .glide__arrow.glide__arrow--right {
+  border: none;
 }
 
 .media {
