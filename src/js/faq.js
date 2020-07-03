@@ -26,5 +26,6 @@ const faq = () => {
     content[4].classList.toggle("faq_accordion-body--active");
   });
 };
+faq();
 
 export default faq;
