@@ -1,6 +1,7 @@
 .footer {
   height: 510px;
   width: 100%;
+  margin-bottom: 85px;
   background-color: #162753;
   color: white;
   &_container {
@@ -31,6 +32,9 @@
     }
     a {
       text-decoration: underline white;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
   &_icons {
@@ -48,6 +52,9 @@
         img {
           height: 45px;
           width: 45px;
+        }
+        &:hover {
+          opacity: 0.6;
         }
       }
     }

@@ -1,15 +1,26 @@
 .f-view {
-  height: 1200px;
-  background-image: url(../img/img_keyvisual_1.png);
-  background-position: center 1px;
-  background-repeat: no-repeat;
+  height: 1000px;
+  position: relative;
+  &_background {
+    width: 100%;
+    height: 100%;
+    .keyvisual {
+      position: absolute;
+      top: 0;
+      opacity: 0;
+      transition: 0.5s;
+      &--active {
+        opacity: 1;
+      }
+    }
+  }
   &_container {
     margin-left: 90px;
   }
   &_content {
     display: flex;
     flex-direction: column;
-    position: relative;
+    // position: relative;
     &-title {
       font-size: 4rem;
       letter-spacing: 14.5px;
@@ -54,7 +65,7 @@
   }
   .btn_register-top {
     position: absolute;
-    bottom: -380px;
+    top: 808px;
     will-change: transform;
   }
 }
